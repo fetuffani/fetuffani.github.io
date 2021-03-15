@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="fetuffani" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://fetuffani.github.io/" />
+	<meta property="og:image" content="http://my.site.com/images/thumb.png" />
+	<meta property="og:description" content="Em breve meu site pessoal" />
+
 	<title>fetuffani</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-	pagina :)
+
+<body onload="loadscript()">
+	<div id="wrapper">
+		<div id="reader" data-status="">
+			<div class="top">
+				<div class="screen">
+					<div id="message"></div>
+				</div>
+				<div class="lights">
+					<div class="light red"></div>
+					<div class="light green"></div>
+				</div>
+			</div>
+			<div id="card">
+				<div id="photo"></div>
+				<p class="cardname"></p>
+			</div>
+			<div class="bottom"></div>
+		</div>
+		<div class="disclaimer">
+			Em breve minha pagina pessoal... ;)<br>Feito por <a
+				href="https://css-tricks.com/recreating-game-elements-for-the-web-the-among-us-card-swipe/">Thomas
+				Park</a>
+		</div>
+	</div>
+
 </body>
+
 </html>
