@@ -145,7 +145,7 @@
 	content: "fetuffani";
   }
 
-  .disclaimer, .disclaimer a {
+  .disclaimer, .disclaimer p a {
 	width: 100%;
 	margin: auto;
 	max-width: 700px;
@@ -153,6 +153,7 @@
 	text-align: center;
 	font-family: 'Lucida Console';
 	color: blanchedalmond;
+	line-height: 20px;
   }
   
   [data-status="invalid"] #message:after {
