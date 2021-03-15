@@ -156,19 +156,19 @@
   }
   
   [data-status="invalid"] #message:after {
-	content: "Bad read. Try again.";
+	content: "Erro. Tente novamente";
   }
   
   [data-status="slow"] #message:after {
-	content: "Too slow. Try again.";
+	content: "Muito devagar. Tente novamente";
   }
   
   [data-status="fast"] #message:after {
-	content: "Too fast. Try again.";
+	content: "Muito rápido. Tente novamente";
   }
   
   [data-status="valid"] #message:after {
-	content: "Accepted. Thank you.";
+	content: "Sucesso!";
   }
 
   [data-status="embreve"] #message:after {
