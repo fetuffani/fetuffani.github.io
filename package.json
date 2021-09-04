@@ -6,7 +6,9 @@
     "dev": "next dev",
     "export": "next export",
     "build": "next build",
-    "start": "next build & next start"
+    "start": "next build & next start",
+	"deploy": "next build && next export -o docs && git checkout -- docs/CNAME && git checkout -- docs/.nojekyll && git add docs && git commit -m \"chore: regen site\" && git push origin master"
+
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
