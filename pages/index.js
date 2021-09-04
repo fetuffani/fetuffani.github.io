@@ -84,19 +84,19 @@ const cards = [
 	{
 		header: "Financial Calculator",
 		caption: "Webapp to calculate some personal finances such as income and stocks profit taxes.",
-		// url: "https://calcfin.vercel.app",
+		url: "https://calcfin.vercel.app",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
 		header: "Blog",
-		caption: "I do often blog about what I'm thinking, doing or about to do!",
+		caption: "I do often blog about what I'm thinking, doing or about to do! (not yet released)",
 		// url: "https://fetuffani.vercel.app",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
 		header: "GitHub",
-		caption: "Checkout some of my projects!",
-		// url: "https://github.com/fetuffani/",
+		caption: "Checkout some of my coding projects!",
+		url: "https://github.com/fetuffani/",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
@@ -108,7 +108,7 @@ const cards = [
 	{
 		header: "LinkedIn Profile",
 		caption: "",
-		// url: "/",
+		url: "https://www.linkedin.com/in/fetuffani/",
 		// image: "https://source.unsplash.com/random"
 	},
 
