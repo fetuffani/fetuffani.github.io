@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 		// background: 'linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.50))',
 		background: 'linear-gradient(45deg, rgba(0,0,0,0.15) 40%, rgba(255,255,255,0.05) 50%, rgba(0,0,0,0.15) 60%)',
 		backgroundSize: '200% 200%',
-		animation: 'cardBgScroll 200s ease-in-out infinite',
+		// animation: 'cardBgScroll 200s ease-in-out infinite',
 	},
 	cardMedia: {
 		paddingTop: '56.25%', // 16:9
