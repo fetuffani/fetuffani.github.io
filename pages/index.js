@@ -34,14 +34,14 @@ const useStyles = makeStyles((theme) => ({
 	heroContent: {
 		// backgroundColor: theme.palette.background.paper,
 		padding: theme.spacing(8, 0, 6),
-		color:'white !important',
+		color: 'white !important',
 		textShadow: '0px 0px 20px rgba(255, 255, 255, 1)',
 	},
 	heroButtonMargin: {
 		marginTop: theme.spacing(4),
 	},
 	heroButton: {
-		backgroundColor:'rgba(0, 0, 0, .15) !important',
+		backgroundColor: 'rgba(0, 0, 0, .15) !important',
 		backdropFilter: 'blur(80px)',
 	},
 	cardGrid: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 		height: '100%',
 		display: 'flex',
 		flexDirection: 'column',
-		backgroundColor:'rgba(255, 255, 255, .15) !important',
+		backgroundColor: 'rgba(255, 255, 255, .15) !important',
 		backdropFilter: 'blur(8px)',
 
 		// background: 'linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.50))',
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
 	footer: {
 		// backgroundColor: theme.palette.background.paper,
 		padding: theme.spacing(6),
-		color:'white !important',
+		color: 'white !important',
 		textShadow: '0px 0px 20px rgba(255, 255, 255, 1)',
 	},
 }));
@@ -118,9 +118,10 @@ export default function Album() {
 	const classes = useStyles();
 
 	return (
-		<React.Fragment>
-			<CssBaseline />
-			{/* <AppBar position="relative">
+		<>
+			<React.Fragment>
+				<CssBaseline />
+				{/* <AppBar position="relative">
 				<Toolbar>
 					<CameraIcon className={classes.icon} />
 					<Typography variant="h6" color="inherit" noWrap>
@@ -128,82 +129,83 @@ export default function Album() {
 					</Typography>
 				</Toolbar>
 			</AppBar> */}
-			<main>
-				{/* Hero unit */}
-				<div className={classes.heroContent}>
-					<Container maxWidth="sm">
-						<Typography component="h1" variant="h2" align="center" gutterBottom>
-							Felipe Tuffani
-						</Typography>
-						<Typography variant="h5" align="center" paragraph>
-							Front and Backend Developer, Data Scientist and Mechanical Engineer
-						</Typography>
-						<div className={classes.heroButtonMargin}>
-							<Grid container spacing={2} justifyContent="center">
-								<Grid item>
-									<Button className={classes.heroButton} variant="contained" color="primary">
-										Contact
-									</Button>
-								</Grid>
-								{/* <Grid item>
+				<main>
+					{/* Hero unit */}
+					<div className={classes.heroContent}>
+						<Container maxWidth="sm">
+							<Typography component="h1" variant="h2" align="center" gutterBottom>
+								Felipe Tuffani
+							</Typography>
+							<Typography variant="h5" align="center" paragraph>
+								Front and Backend Developer, Data Scientist and Mechanical Engineer
+							</Typography>
+							<div className={classes.heroButtonMargin}>
+								<Grid container spacing={2} justifyContent="center">
+									<Grid item>
+										<Button className={classes.heroButton} variant="contained" color="primary">
+											Contact
+										</Button>
+									</Grid>
+									{/* <Grid item>
 									<Button variant="outlined" color="primary">
 										Secondary action
 									</Button>
 								</Grid> */}
-							</Grid>
-						</div>
-					</Container>
-				</div>
-				<Container className={classes.cardGrid} maxWidth="md">
-					{/* End hero unit */}
-					<Grid container spacing={4}>
+								</Grid>
+							</div>
+						</Container>
+					</div>
+					<Container className={classes.cardGrid} maxWidth="md">
+						{/* End hero unit */}
+						<Grid container spacing={4}>
 
-						{cards.map((card) =>
-						(
-							<Grid item key={1} xs={12} sm={6} md={4}>
-								<Card className={classes.card}>
-									{
-										card.image == undefined ? <></> :
-											<CardMedia
-												className={classes.cardMedia}
-												image={card.image}
-												title="Image title"
-											/>
-									}
-									<CardContent className={classes.cardContent}>
-										<Typography gutterBottom variant="h5" component="h2">
-											{card.header}
-										</Typography>
-										<Typography>
-											{card.caption}
-										</Typography>
-									</CardContent>
-									<CardActions>
+							{cards.map((card) =>
+							(
+								<Grid item key={1} xs={12} sm={6} md={4}>
+									<Card className={classes.card}>
 										{
-											card.url == undefined ? <></> :
-											<Button size="small" className={classes.cardVisit} color="primary" href={card.url}>
-											Visit
-											</Button>
+											card.image == undefined ? <></> :
+												<CardMedia
+													className={classes.cardMedia}
+													image={card.image}
+													title="Image title"
+												/>
 										}
-										
-									</CardActions>
-								</Card>
-							</Grid>
-						))}
-					</Grid>
-				</Container>
-			</main>
-			{/* Footer */}
-			<footer className={classes.footer}>
-				<Typography variant="h6" align="center" gutterBottom>
-					Felipe Tuffani
-				</Typography>
-				<Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-					Built with Material-UI
-				</Typography>
-				<Copyright />
-			</footer>
-			{/* End footer */}
-		</React.Fragment>
+										<CardContent className={classes.cardContent}>
+											<Typography gutterBottom variant="h5" component="h2">
+												{card.header}
+											</Typography>
+											<Typography>
+												{card.caption}
+											</Typography>
+										</CardContent>
+										<CardActions>
+											{
+												card.url == undefined ? <></> :
+													<Button size="small" className={classes.cardVisit} color="primary" href={card.url}>
+														Visit
+													</Button>
+											}
+
+										</CardActions>
+									</Card>
+								</Grid>
+							))}
+						</Grid>
+					</Container>
+				</main>
+				{/* Footer */}
+				<footer className={classes.footer}>
+					<Typography variant="h6" align="center" gutterBottom>
+						Felipe Tuffani
+					</Typography>
+					<Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+						Built with Material-UI
+					</Typography>
+					<Copyright />
+				</footer>
+				{/* End footer */}
+			</React.Fragment>
+		</>
 	);
 }
