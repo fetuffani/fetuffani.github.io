@@ -2,6 +2,11 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/WebAsset';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import PagesIcon from '@material-ui/icons/Pages';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -82,32 +87,32 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = [
 	{
-		header: "Financial Calculator",
+		header: <div style={{display:"flex",alignItems:"center",justifyContent: "space-between"}}>{"Financial Calculator"}<AttachMoneyIcon/></div>,
 		caption: "Webapp to calculate some personal finances such as income and stocks profit taxes.",
 		url: "https://calcfin.vercel.app",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
-		header: "Blog",
+		header: <div style={{display:"flex",alignItems:"center",justifyContent: "space-between"}}>{"Blog"}<PagesIcon/></div>,
 		caption: "I do often blog about what I'm thinking, doing or about to do! (not yet released)",
 		// url: "https://fetuffani.vercel.app",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
-		header: "GitHub",
+		header: <div style={{display:"flex",alignItems:"center",justifyContent: "space-between"}}>{"GitHub"}<GitHubIcon/></div>,
 		caption: "Checkout some of my coding projects!",
 		url: "https://github.com/fetuffani/",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
-		header: "Youtube channel",
-		caption: "",
+		header: <div style={{display:"flex",alignItems:"center",justifyContent: "space-between"}}>{"Youtube channel"}<YouTubeIcon/></div>,
+		caption: "Soon I'll be uploading videos to the community. The channel is under development",
 		// url: "/",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
-		header: "LinkedIn Profile",
-		caption: "",
+		header: <div style={{display:"flex",alignItems:"center",justifyContent: "space-between"}}>{"LinkedIn"}<LinkedInIcon/></div>,
+		caption: "My professional LinkedIn page, you can contact me here",
 		url: "https://www.linkedin.com/in/fetuffani/",
 		// image: "https://source.unsplash.com/random"
 	},
