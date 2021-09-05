@@ -20,8 +20,8 @@ a {
 	box-sizing: border-box;
 }
 
-@keyframes cardBgScroll {
+/* @keyframes cardBgScroll {
     0%{background-position:0% 15%;}
     50%{background-position:30% 15%;}
     100%{background-position:0% 15%;}
-}
+} */

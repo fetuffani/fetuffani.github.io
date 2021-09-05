@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const cardTitleStyle = { display: "flex", alignItems: "center", justifyContent: "space-between" }
-const hathorSVG = <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 53 70" aria-hidden="true">
+const hathorSVG = <svg className="MuiSvgIcon-root" focusable="false" viewBox="0 0 53 70" aria-hidden="true">
 	<path d="M 8.4003906,0 V 44.400391 H 0 V 53 h 8.4003906 10.1992184 7.800782 v -8.599609 h -7.800782 v -1.800782 c 0,-4.4 1.100782,-7.799609 3.300782,-10.099609 2.2,-2.3 5.2,-3.5 9,-3.5 3.8,0 6.8,1.2 9,3.5 2.2,2.3 3.298828,5.699609 3.298828,10.099609 V 70 H 53.300781 V 41 c 0,-6.5 -1.80039,-11.600781 -5.40039,-15.300781 -3.6,-3.7 -8.201172,-5.5 -13.701172,-5.5 -7.2,0 -12.399219,2.901562 -15.699219,8.601562 V 0 Z M 0,61.5 v 8.599609 H 8.4003906 18.599609 26.300781 V 61.5 H 18.599609 8.4003906 Z" />
 </svg>
 
