@@ -1,6 +1,11 @@
+body:after{
+    display:none;
+    content: url("../public/bg_light.jpg");
+}
+
 html,
 body {
-	background-image: url("../public/bg.jpg");
+	background-image: url("../public/bg_light.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
