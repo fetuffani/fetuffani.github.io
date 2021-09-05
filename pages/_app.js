@@ -13,6 +13,8 @@ function MyApp({ Component, pageProps }) {
 			<meta property="og:url" content="https://fetuffani.github.io" />
 			<meta property="og:image" content="https://fetuffani.github.io/avatar.png" />
 			<meta property="og:description" content="Hey, checkout my personal webpage and find out what I've been into!" />
+
+			<meta name="google-site-verification" content="cf55v97BKYEcI4iAtkFZQDIrFJQuJsU17hODsXu1Cm0" />
 		</Head>
 		<Component {...pageProps} />
 	</>
