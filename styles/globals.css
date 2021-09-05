@@ -5,11 +5,12 @@ body:after{
 
 html,
 body {
+	background-color: #000;
 	background-image: url("../public/bg_light.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size:cover;
 	background-position: top;
+	background-attachment: fixed;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
