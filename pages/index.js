@@ -102,8 +102,8 @@ const cards = [
 	},
 	{
 		header: <div style={cardTitleStyle}>{"Blog"}<PagesIcon /></div>,
-		caption: <>{"I do often blog about what I'm thinking, doing or about to do. The blog is not intended to be my portifolio, but a way to write down my thoughts and wills"}<br/>{"(not yet released)"}</>,
-		// url: "https://fetuffani.vercel.app",
+		caption: <>{"I do often blog about what I'm thinking, doing or about to do. The blog is not intended to be my portifolio, but a way to write down my thoughts and wills"}</>,
+		url: "https://fetuffani.vercel.app",
 		// image: "https://source.unsplash.com/random"
 	},
 	{
@@ -162,7 +162,7 @@ export default function Album() {
 	return (
 		<>
 			<React.Fragment>
-				<CssBaseline />
+				{/* <CssBaseline /> */}
 				{/* <AppBar position="relative">
 				<Toolbar>
 					<CameraIcon className={classes.icon} />
@@ -245,7 +245,7 @@ export default function Album() {
 						Felipe Tuffani
 					</Typography>
 					<Typography variant="subtitle1" align="center" component="p">
-						Built with Material-UI
+						Built with React, Material-UI and SCSS
 					</Typography>
 					<Typography variant="body2" align="center">
 						{'Copyright © '}

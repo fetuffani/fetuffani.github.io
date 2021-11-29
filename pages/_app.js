@@ -1,5 +1,6 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import Head from 'next/head'
+import LazyLoad from 'react-lazyload';
 
 function MyApp({ Component, pageProps }) {
 	return (<>
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps }) {
 
 			<meta name="google-site-verification" content="cf55v97BKYEcI4iAtkFZQDIrFJQuJsU17hODsXu1Cm0" />
 		</Head>
-		<Component {...pageProps} />
+		<LazyLoad height={200} >
+			<Component {...pageProps} />
+		</LazyLoad>
 	</>
 	)
 }

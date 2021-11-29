@@ -1,0 +1,59 @@
+body:after{
+    display:none;
+    /* content: url("../public/bg_light.jpg"); */
+}
+
+html,
+body {
+	background-color: #000;
+	background-image: url("../public/bg_light.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: top;
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+	/* animation: 1s ease-out 0s 1 slideInFromLeft; */
+}
+
+
+@for $i from 1 through 11 {
+    .MuiGrid-root:nth-child(#{$i}n) {
+		backdrop-filter: blur(8px);
+		opacity: 0;
+		animation: 1s ease-out 0s 1 slideInFromLeft;
+        animation-delay: #{$i * 0.15}s;
+		animation-fill-mode: forwards;
+    }
+}
+
+@keyframes slideInFromLeft {
+	0% {
+	  opacity: 0;
+	  filter:blur(100px);
+	  transform: scale(0.5);
+	}
+	100% {
+	  opacity: 1;
+	  filter:blur(0px);
+	  transform: scale(1);
+	}
+  }
+
+/* @keyframes cardBgScroll {
+    0%{background-position:0% 15%;}
+    50%{background-position:30% 15%;}
+    100%{background-position:0% 15%;}
+} */
