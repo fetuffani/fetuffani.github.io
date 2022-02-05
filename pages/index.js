@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 
 import CameraIcon from '@material-ui/icons/WebAsset';
+import ShowChartIcon from '@material-ui/icons/ShowChart';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PagesIcon from '@material-ui/icons/Pages';
@@ -152,6 +153,12 @@ const cards = [
 		header: <div style={cardTitleStyle}>{"TStream"}<PersonalVideoIcon/></div>,
 		caption: "Simple and small video midia server to your in your home network so you can watch your midia without the need to copy from one device to another",
 		url: "https://github.com/fetuffani/TStreamMediaServer",
+		// image: "https://source.unsplash.com/random"
+	},
+	{
+		header: <div style={cardTitleStyle}>{"Stock Analysis"}<ShowChartIcon/></div>,
+		caption: "A web tool I made for myself in order to help me track some stock markets movement",
+		url: "https://github.com/fetuffani/StockAnalysis",
 		// image: "https://source.unsplash.com/random"
 	},
 ]
